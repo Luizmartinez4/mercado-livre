@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre</title>
+    <link rel="stylesheet" href="CSS/cabecalho.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/rodape.css">
+    <link rel="stylesheet" href="CSS/produtos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="JS/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="container-input">
+
+          <div>
+            <a href="index.html"><img class="logo" src="IMG/mercado-livre-87.png" alt="logo"></a>
+          </div>
+
+        
+          <div class="pesquisa"> 
+            <div class="conta-pesquisa">
+
+              
+              <ion-icon name="search-outline" id="icon-p"></ion-icon>
+               
+            
+              <input type="text" id="input-pesquisa" placeholder="buscar, produtos,marcas,e muito mais..." autocomplete="off">
+            </div>
+
+            <div id="results"></div>
+          </div> 
+
+        </div>
+
+    </header>
+
+    <div class="cont-categorias">
+
+      <div class="cont-cep">
+        <ion-icon name="location-outline" id="icon-cep"></ion-icon>
+        <p>informe seu <br><strong>CEP</strong></p>
+      </div>
+
+      <div class="cont-cards">
+        <div class="cont-butons" id="card-dropdown">
+          <p>Categorias</p>
+          <button class="btn-v">v</button>
+          <div class="dropdown">
+            <a>Roupas e acessórios</a>
+            <a>Celulares e Telefones</a>
+            <a>Computação</a>
+            <a>Consoles e Videogames</a>
+            <a>Comidas e Bebidas</a>
+            <a>Eletrodomésticos</a>
+            <a>Esportes e Fitness</a>
+          </div>
+        </div>
+  
+        <div class="cont-butons">
+          <p>Ofertas</p>  
+        </div>
+        
+        <div class="cont-butons">
+          <a href="cadastro.html">Cadastre-se</a>
+        </div>
+  
+        <div class="cont-butons">
+          <p>Entrar</p>
+        </div>
+      </div>
+
+      <div class="cont-cart">
+        <ion-icon name="cart-outline" id="icon-cart"></ion-icon>
+        <div class="cart-quantia"></div>
+      </div>
+      <div class="cart-items"></div>
+    
+    </div>
+
+    <main>
+        <section class="produto"></section>
+    </main>
+
+    <footer class="rodape">
+
+        <div>
+          <img class="logo-rodape" src="IMG/mercado-livre-87.png" alt="imagem-rodape">
+        </div>
+
+        <div class="rodape-items">
+          <div class="cont-rodape">
+            <h1 class="h1-rodape">Sobre o </h1>
+            <a href="">mercado livre</a>
+            <a href="">Tendencias</a>
+            <a href="">Blog</a>
+            <a href="">sustentabilidade</a>
+          </div>
+      
+          <div class="cont-rodape-2">
+            <h1 class="h1-rodape">Assinaturas</h1>
+            <a href="">Meli +</a>
+            <a href="">Disney +</a>
+            <a href="">Deezer Premium</a>
+            <a href="">Max</a>
+            <a href="">Paramont +</a>
+          </div>
+      
+          <div class="cont-rodape">
+            <h1 class="h1-rodape">Temporadas</h1>
+            <a href="">Dia do Consumidor</a>
+            <a href="">Dia Das Maes</a>
+            <a href="">Black Friday</a>
+            <a href="">Descontaco</a>
+          </div>
+      
+          <div class="cont-rodape-4">
+            <h1 class="h1-rodape">Minha Conta</h1>
+            <a href="">Entrar</a>
+            <a href="">Vender</a>
+          </div>
+        </div>
+    
+    
+    
+      </footer>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script type="module" src="JS/produto.js"></script>
+        <script type="module" src="JS/quantidade.js"></script>
+        <script type="module" src="JS/carrossel.js"></script>
+        <script src="JS/pesquisa.js"></script>
+        <script type="module" src="JS/carrinho.js"></script>
+    </body>
+    </html>
